@@ -15,7 +15,7 @@
 		- **scripts/**
 			- [verif_ssl_15days.sh](Admin/Web/scripts/verif_ssl_15days.sh)
 		- **ssl/**
-			- [autodigne.md](Admin/Web/ssl/autodigne.md)
+			- [autosigne.md](Admin/Web/ssl/autosigne.md)
 			- [certbot.md](Admin/Web/ssl/certbot.md)
 			- [commandes_pratiques.md](Admin/Web/ssl/commandes_pratiques.md)
 	- **Linux/**
