@@ -6,17 +6,18 @@ whoami /user
 ```
 
 ## Utilisateur local
-```shell
+```powershell
 Get-LocalUser -Name "NOM_UTILISATEUR" | Select-Object Name, SID
 ```
-```shell
+```powershell
 Get-LocalUser -Name bob.smith | Select-Object Name,SID
 
 Name      SID
 ----      ---
 bob.smith S-1-5-21-2614195641-1726409526-3792725429-1003
+```
 
-
+``` powershell
 Get-LocalUser -Name bob.smith | fl *
 
 AccountExpires         :
@@ -37,13 +38,60 @@ ObjectClass            : User
 
 Nota : `fl` est l'alias de `Format-List`
 
-ou
-```DOS
+ou en DOS
+```shell
 wmic useraccount where name='NOM_UTILISATEUR' get sid
 ```
 
+### Pour voir tous les users
+
+``` powershell
+Get-LocalUser -Name * | Select-Object Name,SID
+
+Name               SID
+----               ---
+Administrator      S-1-5-21-2614195641-1726409526-3792725429-500
+bob.smith          S-1-5-21-2614195641-1726409526-3792725429-1003
+DefaultAccount     S-1-5-21-2614195641-1726409526-3792725429-503
+defaultuser0       S-1-5-21-2614195641-1726409526-3792725429-1000
+Guest              S-1-5-21-2614195641-1726409526-3792725429-501
+htb-student        S-1-5-21-2614195641-1726409526-3792725429-1002
+Jim                S-1-5-21-2614195641-1726409526-3792725429-1006
+mrb3n              S-1-5-21-2614195641-1726409526-3792725429-1001
+WDAGUtilityAccount S-1-5-21-2614195641-1726409526-3792725429-504
+```
+
+## Voir tous les groupe locaux
+
+``` powershell
+Get-LocalGroup -Name * | Select-Object Name,SID
+
+Name                                SID
+----                                ---
+HR                                  S-1-5-21-2614195641-1726409526-3792725429-1007
+Access Control Assistance Operators S-1-5-32-579
+Administrators                      S-1-5-32-544
+Backup Operators                    S-1-5-32-551
+Cryptographic Operators             S-1-5-32-569
+Distributed COM Users               S-1-5-32-562
+Event Log Readers                   S-1-5-32-573
+Guests                              S-1-5-32-546
+Hyper-V Administrators              S-1-5-32-578
+IIS_IUSRS                           S-1-5-32-568
+Network Configuration Operators     S-1-5-32-556
+Performance Log Users               S-1-5-32-559
+Performance Monitor Users           S-1-5-32-558
+Power Users                         S-1-5-32-547
+Remote Desktop Users                S-1-5-32-555
+Remote Management Users             S-1-5-32-580
+Replicator                          S-1-5-32-552
+System Managed Accounts Group       S-1-5-32-581
+Users                               S-1-5-32-545
+```
+
+
 ## utilisateur AD
-```shell
+```powershell
 Get-ADUser -Identity "NOM_UTILISATEUR" | Select-Object SID
 ```
 
