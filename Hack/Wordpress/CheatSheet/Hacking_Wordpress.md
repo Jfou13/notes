@@ -13,3 +13,6 @@
 | `grep <pattern>`               | Filters specific pattern in files or redirected output                                 |
 | `jq`                           | Transforms JSON input and streams of JSON entities                                     |
 | `man <tool>`                   | Man provides you with the manpage of the specific tool                                 |
+
+## Site pour avoir un token api wpscan
+https://wpscan.com/
