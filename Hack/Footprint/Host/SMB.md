@@ -301,3 +301,31 @@ domain_logoff_information:
 
 Completed after 0.61 seconds
 ```
+
+
+## RPCclient
+
+```shell
+rpcclient -U '' -N 10.129.28.161
+rpcclient $> srvinfo
+	DEVSMB         Wk Sv PrQ Unx NT SNT InlaneFreight SMB server (Samba, Ubuntu)
+	platform_id     :	500
+	os version      :	6.1
+	server type     :	0x809a03
+rpcclient $> 
+
+rpcclient $> lsaquery
+Domain Name: DEVOPS
+Domain Sid: (NULL SID)
+```
+
+
+|**Query**|**Description**|
+|---|---|
+|`srvinfo`|Server information.|
+|`enumdomains`|Enumerate all domains that are deployed in the network.|
+|`querydominfo`|Provides domain, server, and user information of deployed domains.|
+|`netshareenumall`|Enumerates all available shares.|
+|`netsharegetinfo <share>`|Provides information about a specific share.|
+|`enumdomusers`|Enumerates all domain users.|
+|`queryuser <RID>`|Provides information about a specific user.|
