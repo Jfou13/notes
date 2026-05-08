@@ -318,6 +318,61 @@ rpcclient $> lsaquery
 Domain Name: DEVOPS
 Domain Sid: (NULL SID)
 ```
+```shell
+rpcclient $> enumdomains
+name:[DEVSMB] idx:[0x0]
+name:[Builtin] idx:[0x1]
+```
+```shell
+rpcclient $> querydominfo
+Domain:		DEVOPS
+Server:		DEVSMB
+Comment:	InlaneFreight SMB server (Samba, Ubuntu)
+Total Users:	0
+Total Groups:	0
+Total Aliases:	0
+Sequence No:	1778221789
+Force Logoff:	4294967295
+Domain Server State:	0x1
+Server Role:	ROLE_DOMAIN_PDC
+Unknown 3:	0x1
+```
+```shell
+rpcclient $> netshareenumall
+netname: print$
+	remark:	Printer Drivers
+	path:	C:\var\lib\samba\printers
+	password:	
+netname: sambashare
+	remark:	InFreight SMB v3.1
+	path:	C:\home\sambauser\
+	password:	
+netname: IPC$
+	remark:	IPC Service (InlaneFreight SMB server (Samba, Ubuntu))
+	path:	C:\tmp
+	password:
+```
+```shell
+rpcclient $> netsharegetinfo sambashare
+netname: sambashare
+	remark:	InFreight SMB v3.1
+	path:	C:\home\sambauser\
+	password:	
+	type:	0x0
+	perms:	0
+	max_uses:	-1
+	num_uses:	1
+revision: 1
+type: 0x8004: SEC_DESC_DACL_PRESENT SEC_DESC_SELF_RELATIVE 
+DACL
+	ACL	Num ACEs:	1	revision:	2
+	---
+	ACE
+		type: ACCESS ALLOWED (0) flags: 0x00 
+		Specific bits: 0x1ff
+		Permissions: 0x1f01ff: SYNCHRONIZE_ACCESS WRITE_OWNER_ACCESS WRITE_DAC_ACCESS READ_CONTROL_ACCESS DELETE_ACCESS 
+		SID: S-1-1-0
+```
 
 
 |**Query**|**Description**|
