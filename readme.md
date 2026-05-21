@@ -2,7 +2,6 @@
 
 ---
 
-
 ## Menu
 
 - **Admin/** : Notes Admin Sys
@@ -36,15 +35,69 @@
 	- **Reseaux/**
 		- [nc.md](Admin/Reseaux/nc.md)
 		- [tcpdump.md](Admin/Reseaux/tcpdump.md)
-  
+
+- **Challenge/** : Défis et exercices
+	- **Behind_the_scene/**
+		- [Behind_the_scene.md](Challenge/Behind_the_scene/Behind_the_scene.md)
+	- **Debugging_Interface/**
+		- [Debugging_Interface.md](Challenge/Debugging_Interface/Debugging_Interface.md)
+
 - **Docs/** : Documentation technique
-	- [Headers/Referrer-Policy.md](Docs/Headers/Referrer-Policy.md)
-	- [Git/CheatSheet.md](Docs/Git/CheatSheet.md)
-- **Hack/** : Hacking
-	- [Footprint/Domain information/Domain_information.md](Hack/Footprint/Domain%20information/Domain_information.md)
+	- **Git/**
+		- [CheatSheet.md](Docs/Git/CheatSheet.md)
+	- **Headers/**
+		- [Referrer-Policy.md](Docs/Headers/Referrer-Policy.md)
+
+- **Hack/** : Hacking et Sécurité
+	- **Footprint/**
+		- **Domain information/**
+			- [Domain_information.md](Hack/Footprint/Domain%20information/Domain_information.md)
+		- **Host/**
+			- [NFS.md](Hack/Footprint/Host/NFS.md)
+			- [SMB.md](Hack/Footprint/Host/SMB.md)
+	- **Metasploit/**
+		- [Framework.md](Hack/Metasploit/Framework.md)
+		- [MSF_scan_nmap.md](Hack/Metasploit/MSF_scan_nmap.md)
+		- [MSF_steal_token.md](Hack/Metasploit/MSF_steal_token.md)
+		- [MSFVenom.md](Hack/Metasploit/MSFVenom.md)
+		- [Payloads.md](Hack/Metasploit/Payloads.md)
+		- **CheatSheet/**
+			- [CS_Metasploit.md](Hack/Metasploit/CheatSheet/CS_Metasploit.md)
+	- **Tools/**
+		- [Metasploit.md](Hack/Tools/Metasploit.md)
+		- [searchsploit.md](Hack/Tools/searchsploit.md)
+		- [Wpscan.md](Hack/Tools/Wpscan.md)
+	- **Webshell/**
+		- [webshell_location.md](Hack/Webshell/webshell_location.md)
 	- **Windows/**
-		- [Basics/Permissions_ICACLS.md](Hack/Windows/Basics/Permissions_ICACLS.md)
-		- [Basics/Smbclient.md](Hack/Windows/Basics/Smbclient.md)
-		- [CheatSheet/Windows_Fundamentals.md](Hack/Windows/CheatSheet/Windows_Fundamentals.md)
+		- **Basics/**
+			- [List_Services.md](Hack/Windows/Basics/List_Services.md)
+			- [Permissions_ICACLS.md](Hack/Windows/Basics/Permissions_ICACLS.md)
+			- [Regedit.md](Hack/Windows/Basics/Regedit.md)
+			- [SID.md](Hack/Windows/Basics/SID.md)
+			- [Smbclient.md](Hack/Windows/Basics/Smbclient.md)
+			- [Version&SN.md](Hack/Windows/Basics/Version&SN.md)
+			- [WSL.md](Hack/Windows/Basics/WSL.md)
+			- **CheatSheet/**
+				- [CS_Windows_Fundamentals.md](Hack/Windows/Basics/CheatSheet/CS_Windows_Fundamentals.md)
+		- **CLI/**
+			- [Basics.md](Hack/Windows/CLI/Basics.md)
+			- [find.md](Hack/Windows/CLI/find.md)
+			- [Gathering_System_Infos.md](Hack/Windows/CLI/Gathering_System_Infos.md)
+			- **CheatSheet/**
+				- [CS_Windows_CLI.md](Hack/Windows/CLI/CheatSheet/CS_Windows_CLI.md)
+	- **Wordpress/**
+		- [LFI.md](Hack/Wordpress/LFI.md)
+		- [Plugins_and_Themes_Enumeration.md](Hack/Wordpress/Plugins_and_Themes_Enumeration.md)
+		- [RCE.md](Hack/Wordpress/RCE.md)
+		- [SkillAssessment.md](Hack/Wordpress/SkillAssessment.md)
+		- [Users_enum.md](Hack/Wordpress/Users_enum.md)
+		- [WP_dirbusting.md](Hack/Wordpress/WP_dirbusting.md)
+		- [WP_version_enum.md](Hack/Wordpress/WP_version_enum.md)
+		- [Wpscan_enum.md](Hack/Wordpress/Wpscan_enum.md)
+		- [Wpscan_Users_Bruteforce.md](Hack/Wordpress/Wpscan_Users_Bruteforce.md)
+		- [xmlrpc_attacks.md](Hack/Wordpress/xmlrpc_attacks.md)
+		- **CheatSheet/**
+			- [CS_Hacking_Wordpress.md](Hack/Wordpress/CheatSheet/CS_Hacking_Wordpress.md)
 
 ---
