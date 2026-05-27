@@ -28,3 +28,9 @@ EOF
 └─# node solution.js
 function generateSerial(){var flag="HTB{1_4m_7h3_<snip>_g3n3r470r!}";var xhr=new XMLHttpRequest();var url="/serial.php";xhr.open("POST",url,true);xhr.send(null)}
 ```
+
+```shell
+┌──(root㉿kaljfou)-[~]
+└─# curl -s http://154.57.164.76:31114/serial.php -X POST
+N2gxNV8xNV9h<snip>MzU1NGcz 
+```
