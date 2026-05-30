@@ -27,6 +27,7 @@ The cheat sheet is a useful command reference for this module.
 |`Get-Module`|View the modules loaded into your PowerShell session.|
 |`Import-Module`|Import a module into your PowerShell session.|
 |`Get-Command`|View all commands, cmdlets, functions, and aliases loaded into your PowerShell session.|
+|`Get-Location` | Show us our current location on the host system |
 |`Set-Location <path>`|Changes our location in the filesystem. Same as using CD.|
 |`Get-Content <file>`|View the contents of an object. Similar to type or cat.|
 |`systeminfo`|Displays operating system configuration information for a local or remote machine.|
