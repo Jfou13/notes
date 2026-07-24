@@ -25,4 +25,10 @@ grep -E '1[45678]:[0-9][0-9]:' /var/log/haproxy/haproxy.log | awk '{ print $6 }'
 
   63408 47.XYZ.0.0/16
    4494 10.XYZ.0.0/16
-   ```
+```
+
+## Supprimer les commentaires et espaces vides d'un fichier.
+
+```bash
+cat /etc/postfix/main.cf | grep -v "#" | sed -r "/^\s*$/d"
+```
