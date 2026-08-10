@@ -25,3 +25,9 @@ sudo nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-c
 sudo nmap -p1521 -sV 10.129.204.235 --open
 sudo nmap -p1521 -sV 10.129.204.235 --open --script oracle-sid-brute
 ```
+
+## IPMI
+
+```bash
+sudo nmap -sU --script ipmi-version -p 623 ilo.inlanfreight.local
+```
