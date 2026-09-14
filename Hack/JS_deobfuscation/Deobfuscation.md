@@ -34,3 +34,13 @@ function generateSerial(){var flag="HTB{1_4m_7h3_<snip>_g3n3r470r!}";var xhr=new
 └─# curl -s http://154.57.164.76:31114/serial.php -X POST
 N2gxNV8xNV9h<snip>MzU1NGcz 
 ```
+
+```shell
+┌──(root㉿kaljfou)-[~]
+└─# echo N2gxNV8xNV9hX3MzY3IzN19tMzU1NGcz | base64 -d
+7h15_15_a_s3cr37_m3554g3
+
+┌──(root㉿kaljfou)-[~]
+└─# curl -s http://154.57.164.82:30507/serial.php -X POST -d "serial=7h15_15_a_s3cr37_m3554g3"
+HTB{snip}
+```
