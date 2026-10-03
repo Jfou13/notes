@@ -12,5 +12,5 @@ christine
 ```
 
 ```shell
-hydra -L usernames.txt -p 'le_password' {target_ip} ssh
+hydra -L usernames.txt -p 'password_a_tester' {target_ip} ssh
 ```
