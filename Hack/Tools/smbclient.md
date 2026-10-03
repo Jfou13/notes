@@ -3,12 +3,12 @@
 ## Utilisation
 
 ```shell
-$ smbclient -L {target_IP} -U Administrator
+$ smbclient -L {target_IP} -U administrator
 $ smbclient -N -L {target_IP}
 ```
 
 ```shell
-$ smbclient //{target_IP}/C$ -U Administrator 
+$ smbclient //{target_IP}/C$ -U administrator 
 Password for [WORKGROUP\Administrator]:
 Try "help" to get a list of possible commands.
 smb: \> ls
@@ -31,7 +31,7 @@ smb: \> ls
 
 ```shell
 ┌──(root㉿kali)-[~]
-└─# mount -t cifs //{target_IP}/C$ /mnt/tactics -o username=Administrator
+└─# mount -t cifs //{target_IP}/C$ /mnt/tactics -o username=administrator
 Password for Administrator@//{target_IP}/C$: 
                                                                                                                                                                                                                       
 ┌──(root㉿kali)-[~]
