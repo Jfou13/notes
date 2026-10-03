@@ -36,5 +36,9 @@ sudo nmap -sU --script ipmi-version -p 623 ilo.inlanfreight.local
 
 ```bash
 sudo nmap -sU -T4 {target_IP} --top-ports 20
+Nmap done: 1 IP address (1 host up) scanned in 4.97 seconds
+
+sudo nmap -sU -T4 {target_IP} --top-ports 20 -sV
+Nmap done: 1 IP address (1 host up) scanned in 108.16 seconds
 ```
 
