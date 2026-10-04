@@ -22,6 +22,10 @@ session.save_path => tcp://<ip>:<port>?
 
 #### créer une page info.php
 
+```bash
+echo "<?php phpinfo(); ?>" > test.php
+```
+
 ``` php
 <?php phpinfo(); ?>
 ```
