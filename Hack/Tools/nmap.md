@@ -11,6 +11,30 @@ sudo nmap -sC -A -Pn {target_IP}
 -Pn : Treat all hosts as online -- skip host discovery
 ```
 
+## Vulnerabilités
+
+```bash
+$ nmap -sV --script vuln {target_IP} -p 8443
+PORT     STATE SERVICE         VERSION
+8443/tcp open  ssl/nagios-nsca Nagios NSCA
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+| http-enum: 
+|_  /api/: Potentially interesting folder (401 )
+```
+
 ## SMTP
 
 ```bash
