@@ -1,5 +1,16 @@
 # NMAP
 
+## bypassing firewall restrictions for service scanning and host discovery
+
+```bash
+sudo nmap -sC -A -Pn {target_IP}
+```
+```
+-sC : Equivalent to --script=default
+-A : Enable OS detection, version detection, script scanning, and traceroute
+-Pn : Treat all hosts as online -- skip host discovery
+```
+
 ## SMTP
 
 ```bash
