@@ -8,3 +8,12 @@ Spawn `/bin/bash` using [Python's PTY module](https://docs.python.org/3/library/
 python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
+
+## Shell to Bash
+
+```bash
+SHELL=/bin/bash script -q /dev/null
+```
+```bash
+script /dev/null -c bash
+```
