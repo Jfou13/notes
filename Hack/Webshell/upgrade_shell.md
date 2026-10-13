@@ -8,6 +8,14 @@ Spawn `/bin/bash` using [Python's PTY module](https://docs.python.org/3/library/
 python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
+```
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+ctrl+z
+stty raw -echo
+fg
+reset
+xterm
+```
 
 ## Shell to Bash
 
