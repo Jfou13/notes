@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-labelledby="title">
+  <title id="title">Outils de sécurité</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102322"/><stop offset="1" stop-color="#173d36"/></linearGradient><linearGradient id="accent"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs>
+  <rect width="1200" height="110" rx="12" fill="url(#bg)"/><path d="M830 0h370v110H750z" fill="#145144" opacity=".42"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity=".85"><path d="m925 34 35 21-35 21m58-39 30 18-30 18"/><circle cx="1064" cy="55" r="20"/><path d="M1064 26v11m0 36v11m-29-29h11m36 0h11m-50-21 8 8m26 26 8 8m0-42-8 8m-26 26-8 8"/></g>
+  <rect x="48" y="28" width="4" height="54" rx="2" fill="url(#accent)"/>
+  <text x="72" y="54" fill="#effcf5" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">OUTILS</text>
+  <text x="74" y="78" fill="#b3ccc4" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2">NMAP  ·  GOBUSTER  ·  HYDRA  ·  ENUMÉRATION</text>
+  <path d="M1092 55h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

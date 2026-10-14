@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title">
+  <title id="title">Administration système et réseau</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15242b"/><stop offset="1" stop-color="#263b3b"/></linearGradient><linearGradient id="accent"><stop stop-color="#34d399"/><stop offset="1" stop-color="#a3e635"/></linearGradient></defs>
+  <rect width="1200" height="150" rx="14" fill="url(#bg)"/><path d="M830 0h370v150H750z" fill="#294a3c" opacity=".42"/>
+  <g transform="translate(0 20)" fill="none" stroke="url(#accent)" stroke-width="2" opacity=".85"><rect x="928" y="25" width="76" height="60" rx="5"/><path d="M928 42h76m-64-9h1m9 0h1m9 0h1m-15 20h32m-32 10h45"/><circle cx="1027" cy="41" r="9"/><circle cx="1067" cy="69" r="9"/><path d="m1035 46 24 17m-31-13v19"/></g>
+  <rect x="56" y="39" width="5" height="72" rx="2.5" fill="url(#accent)"/>
+  <text x="82" y="78" fill="#f2fbf4" font-family="Segoe UI,Arial,sans-serif" font-size="35" font-weight="700" letter-spacing="2">ADMINISTRATION</text>
+  <text x="84" y="108" fill="#bdcec4" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="3">SYSTÈME  ·  RÉSEAUX  ·  SERVICES</text>
+  <path d="M1092 75h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

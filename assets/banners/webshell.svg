@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-labelledby="title">
+  <title id="title">Webshells</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#251827"/><stop offset="1" stop-color="#402331"/></linearGradient><linearGradient id="accent"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs>
+  <rect width="1200" height="110" rx="12" fill="url(#bg)"/><path d="M830 0h370v110H750z" fill="#532a37" opacity=".42"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity=".85"><path d="M916 32h96v48h-96zM916 44h96"/><circle cx="928" cy="38" r="2" fill="#fb7185"/><circle cx="937" cy="38" r="2" fill="#f97316"/><path d="m936 57-10 8 10 8m12 0h18m18-16 10 8-10 8"/></g>
+  <rect x="48" y="28" width="4" height="54" rx="2" fill="url(#accent)"/>
+  <text x="72" y="54" fill="#fff1f2" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">WEBSHELLS</text>
+  <text x="74" y="78" fill="#d1b9be" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2">SHELLS INVERSES  ·  ACCÈS  ·  POST-EXPLOITATION</text>
+  <path d="M1092 55h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

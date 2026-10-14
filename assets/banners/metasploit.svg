@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-labelledby="title">
+  <title id="title">Notes Metasploit</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#191d27"/>
+      <stop offset="1" stop-color="#30202a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff765f"/>
+      <stop offset="1" stop-color="#ffb454"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="130" rx="14" fill="url(#background)"/>
+  <path d="M820 0h380v130H730z" fill="#482932" opacity=".42"/>
+  <g transform="translate(75 65)" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-28 19V-14l28 20 28-20v33"/>
+    <path d="M-39 29h78"/>
+    <circle cx="-37" cy="-31" r="4" fill="#ff765f" stroke="none"/>
+    <circle cx="-23" cy="-31" r="4" fill="#ffb454" stroke="none"/>
+    <circle cx="-9" cy="-31" r="4" fill="#8be9a3" stroke="none"/>
+  </g>
+  <text x="145" y="71" fill="#fff5f1" font-family="Segoe UI, Arial, sans-serif" font-size="35" font-weight="700" letter-spacing="3">METASPLOIT</text>
+  <text x="147" y="98" fill="#c9b9bd" font-family="Segoe UI, Arial, sans-serif" font-size="14" letter-spacing="2">FRAMEWORK  ·  MODULES  ·  PAYLOADS</text>
+  <path d="M895 65h180m-18-18 18 18-18 18" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+  <circle cx="1120" cy="65" r="5" fill="#ffb454"/>
+</svg>

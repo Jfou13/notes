@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title">
+  <title id="title">Machines et write-ups</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#171d2c"/><stop offset="1" stop-color="#292d45"/></linearGradient><linearGradient id="accent"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs>
+  <rect width="1200" height="150" rx="14" fill="url(#bg)"/><path d="M830 0h370v150H750z" fill="#453044" opacity=".43"/>
+  <g transform="translate(0 20)" fill="none" stroke="url(#accent)" stroke-width="2" opacity=".85">
+    <rect x="929" y="25" width="100" height="60" rx="5"/>
+    <path d="M929 39h100m-86-7h1m9 0h1m10 0h1M942 51h74v10h-74zm0 18h74v10h-74z"/>
+    <circle cx="1007" cy="56" r="2" fill="#fbbf24"/>
+    <circle cx="1007" cy="73" r="2" fill="#fb7185"/>
+    <path d="M1048 36h55m-55 18h39m-39 18h49"/>
+  </g>
+  <rect x="56" y="39" width="5" height="72" rx="2.5" fill="url(#accent)"/>
+  <text x="82" y="78" fill="#fff8ef" font-family="Segoe UI,Arial,sans-serif" font-size="35" font-weight="700" letter-spacing="2">MACHINES</text>
+  <text x="84" y="108" fill="#cec3cd" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="3">WRITE-UPS  ·  ENUMÉRATION  ·  EXPLOITATION</text>
+  <path d="M1092 75h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

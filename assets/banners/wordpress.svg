@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-labelledby="title">
+  <title id="title">Sécurité WordPress</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#14202b"/><stop offset="1" stop-color="#263642"/></linearGradient><linearGradient id="accent"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs>
+  <rect width="1200" height="110" rx="12" fill="url(#bg)"/><path d="M830 0h370v110H750z" fill="#303b56" opacity=".45"/>
+  <circle cx="981" cy="55" r="32" fill="none" stroke="url(#accent)" stroke-width="3" opacity=".85"/>
+  <text x="981" y="69" text-anchor="middle" fill="url(#accent)" font-family="Georgia,serif" font-size="39" font-weight="700">W</text>
+  <rect x="48" y="28" width="4" height="54" rx="2" fill="url(#accent)"/>
+  <text x="72" y="54" fill="#f5f7ff" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">SÉCURITÉ WORDPRESS</text>
+  <text x="74" y="78" fill="#bdc8d3" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2">ÉNUMÉRATION  ·  PLUGINS  ·  VULNÉRABILITÉS</text>
+  <path d="M1092 55h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

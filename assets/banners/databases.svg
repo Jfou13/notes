@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-labelledby="title">
+  <title id="title">Bases de données</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17212d"/><stop offset="1" stop-color="#26374a"/></linearGradient><linearGradient id="accent"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs>
+  <rect width="1200" height="110" rx="12" fill="url(#bg)"/><path d="M830 0h370v110H750z" fill="#303a58" opacity=".42"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2"><ellipse cx="976" cy="34" rx="34" ry="11"/><path d="M942 34v39c0 6 15 11 34 11s34-5 34-11V34m-68 19c0 6 15 11 34 11s34-5 34-11"/></g>
+  <rect x="48" y="28" width="4" height="54" rx="2" fill="url(#accent)"/>
+  <text x="72" y="54" fill="#f5f3ff" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">BASES DE DONNÉES</text>
+  <text x="74" y="78" fill="#bac6d6" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2">MONGODB  ·  SQLITE  ·  COMMANDES</text>
+  <path d="M1092 55h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

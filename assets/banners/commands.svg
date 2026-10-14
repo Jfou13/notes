@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-labelledby="title">
+  <title id="title">Commandes</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111d25"/><stop offset="1" stop-color="#18333a"/></linearGradient><linearGradient id="accent"><stop stop-color="#36d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+  <rect width="1200" height="110" rx="12" fill="url(#bg)"/><path d="M830 0h370v110H745z" fill="#16434a" opacity=".45"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity=".8"><path d="m914 35 18 18-18 18m30 0h48m12-36h60m-60 18h43m-43 18h57"/><circle cx="1086" cy="35" r="4" fill="#36d399"/><circle cx="1070" cy="53" r="4" fill="#22d3ee"/><circle cx="1095" cy="71" r="4" fill="#36d399"/></g>
+  <rect x="48" y="28" width="4" height="54" rx="2" fill="url(#accent)"/>
+  <text x="72" y="54" fill="#effcf8" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">COMMANDES</text>
+  <text x="74" y="78" fill="#b4c9ca" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2">OUTILS EN LIGNE DE COMMANDE</text>
+  <path d="M1092 55h45m-12-12 12 12-12 12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

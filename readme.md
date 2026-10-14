@@ -6,9 +6,16 @@ Index des notes d’administration, de documentation technique, de sécurité et
 
 Notes d’administration système et réseau.
 
+[![Administration](assets/banners/administration.svg)](Admin/)
+
+[![Bases de données](assets/banners/databases.svg)](Admin/Bdd/)
+
 - **Bdd/**
   - [mongo_commandes_de_bases.md](Admin/Bdd/Mongodb/mongo_commandes_de_bases.md)
   - [sqlite3.md](Admin/Bdd/Sqlite/sqlite3.md)
+
+[![Linux](assets/banners/linux.svg)](Admin/Linux/)
+
 - **Linux/**
   - [apt.md](Admin/Linux/apt.md)
   - [AS.md](Admin/Linux/AS.md)
@@ -24,9 +31,15 @@ Notes d’administration système et réseau.
   - [rsync.md](Admin/Linux/rsync.md)
   - [systemctl.md](Admin/Linux/systemctl.md)
   - [upgrade_echec.md](Admin/Linux/upgrade_echec.md)
+
+[![Réseaux](assets/banners/networks.svg)](Admin/Reseaux/)
+
 - **Reseaux/**
   - [nc.md](Admin/Reseaux/nc.md)
   - [tcpdump.md](Admin/Reseaux/tcpdump.md)
+
+[![Administration Web](assets/banners/web-admin.svg)](Admin/Web/)
+
 - **Web/**
   - [apache.md](Admin/Web/apache.md)
   - [curl.md](Admin/Web/curl.md)
@@ -46,8 +59,11 @@ Notes d’administration système et réseau.
 
 Défis et exercices.
 
+[![Challenges](assets/banners/challenges.svg)](Challenge/)
+
 - **Behind_the_scene/**
   - [Behind_the_scene.md](Challenge/Behind_the_scene/Behind_the_scene.md)
+
 - **Debugging_Interface/**
   - [Debugging_Interface.md](Challenge/Debugging_Interface/Debugging_Interface.md)
 
@@ -57,8 +73,15 @@ Défis et exercices.
 
 Documentation technique et références.
 
+[![Documentation](assets/banners/documentation.svg)](Docs/)
+
+[![Git](assets/banners/git.svg)](Docs/Git/)
+
 - **Git/**
   - [CheatSheet.md](Docs/Git/CheatSheet.md)
+
+[![En-têtes HTTP](assets/banners/headers.svg)](Docs/Headers/)
+
 - **Headers/**
   - [Referrer-Policy.md](Docs/Headers/Referrer-Policy.md)
 
@@ -68,10 +91,20 @@ Documentation technique et références.
 
 Notes, outils et fiches pratiques autour du hacking et de la sécurité.
 
+[![Hacking et sécurité](assets/banners/hacking.svg)](Hack/)
+
+[![Fiches pratiques](assets/banners/cheat-sheets.svg)](Hack/cheat_sheets_global/)
+
 - **cheat_sheets_global/**
   - [ftp.md](Hack/cheat_sheets_global/ftp.md)
+
+[![Commandes](assets/banners/commands.svg)](Hack/Commands/)
+
 - **Commands/**
   - [lxc.md](Hack/Commands/lxc.md)
+
+[![Footprinting](assets/banners/footprint.svg)](Hack/Footprint/)
+
 - **Footprint/**
   - **CheatSheet/**
     - [CS_footprinting.md](Hack/Footprint/CheatSheet/CS_footprinting.md)
@@ -89,11 +122,17 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
   - [SMB.md](Hack/Footprint/SMB.md)
   - [SMTP.md](Hack/Footprint/SMTP.md)
   - [SNMP.md](Hack/Footprint/SNMP.md)
+
+[![Déobfuscation JavaScript](assets/banners/javascript.svg)](Hack/JS_deobfuscation/)
+
 - **JS_deobfuscation/**
   - **CheatSheet/**
     - [CS_JS_deobfuscation.md](Hack/JS_deobfuscation/CheatSheet/CS_JS_deobfuscation.md)
   - [Deobfuscation.md](Hack/JS_deobfuscation/Deobfuscation.md)
   - [skill_assessment.md](Hack/JS_deobfuscation/skill_assessment.md)
+
+[![Metasploit](assets/banners/metasploit.svg)](Hack/Metasploit/)
+
 - **Metasploit/**
   - **CheatSheet/**
     - [CS_Metasploit.md](Hack/Metasploit/CheatSheet/CS_Metasploit.md)
@@ -102,8 +141,14 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
   - [MSF_steal_token.md](Hack/Metasploit/MSF_steal_token.md)
   - [MSFVenom.md](Hack/Metasploit/MSFVenom.md)
   - [Payloads.md](Hack/Metasploit/Payloads.md)
+
+[![Préparation](assets/banners/setting-up.svg)](Hack/Setting_up/)
+
 - **Setting_up/**
   - [Theory_Organization.md](Hack/Setting_up/Theory_Organization.md)
+
+[![Outils](assets/banners/tools.svg)](Hack/Tools/)
+
 - **Tools/**
   - [gobuster.md](Hack/Tools/gobuster.md)
   - [hydra.md](Hack/Tools/hydra.md)
@@ -113,10 +158,16 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
   - [smbclient.md](Hack/Tools/smbclient.md)
   - [subfinder.md](Hack/Tools/subfinder.md)
   - [Wpscan.md](Hack/Tools/Wpscan.md)
+
+[![Webshells](assets/banners/webshell.svg)](Hack/Webshell/)
+
 - **Webshell/**
   - [Reverse_shell.md](Hack/Webshell/Reverse_shell.md)
   - [upgrade_shell.md](Hack/Webshell/upgrade_shell.md)
   - [webshell_location.md](Hack/Webshell/webshell_location.md)
+
+[![Sécurité Windows](assets/banners/windows.svg)](Hack/Windows/)
+
 - **Windows/**
   - **Basics/**
     - **CheatSheet/**
@@ -145,6 +196,9 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
     - [Powershell_User_and_Group.md](Hack/Windows/CLI/Powershell_User_and_Group.md)
     - [Powershell_Working_with_Files_and_Directories.md](Hack/Windows/CLI/Powershell_Working_with_Files_and_Directories.md)
     - [Skills_Assessment.md](Hack/Windows/CLI/Skills_Assessment.md)
+
+[![Sécurité WordPress](assets/banners/wordpress.svg)](Hack/Wordpress/)
+
 - **Wordpress/**
   - **CheatSheet/**
     - [CS_Hacking_Wordpress.md](Hack/Wordpress/CheatSheet/CS_Hacking_Wordpress.md)
@@ -165,9 +219,13 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
 
 Write-ups des machines résolues.
 
+[![Machines](assets/banners/machines.svg)](Machines/)
+
 - **Metatwo/**
   - [Writeup_Metatwo.md](Machines/Metatwo/Writeup_Metatwo.md)
+
 - **Reactor/**
   - [Writeup_reactor.md](Machines/Reactor/Writeup_reactor.md)
+
 - **Touch/**
   - [Writeup_touch.md](Machines/Touch/Writeup_touch.md)
