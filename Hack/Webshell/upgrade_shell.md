@@ -8,13 +8,23 @@ Spawn `/bin/bash` using [Python's PTY module](https://docs.python.org/3/library/
 python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
-```
+```bash
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ctrl+z
-stty raw -echo
-fg
-reset
-xterm
+stty raw -echo; fg
+<entrée>
+<entrée>
+export TERM=xterm
+```
+
+pour que `vi` ou `tab` fonctionne bien il faut vérifier la taille de son écran avec
+```bash
+stty size
+27 164
+```
+et sur le shell distant
+```bash
+stty rows 27 cols 164
 ```
 
 ## Shell to Bash
