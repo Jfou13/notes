@@ -1,5 +1,12 @@
 # upgrade shell
 
+## visu shell
+
+```shell
+echo $SHELL # profil
+echo $0 # actuel
+```
+
 ## Python PTY Module
 
 Spawn `/bin/bash` using [Python's PTY module](https://docs.python.org/3/library/pty.html), and connect the controlling shell with its standard I/O.
@@ -34,4 +41,16 @@ SHELL=/bin/bash script -q /dev/null
 ```
 ```bash
 script /dev/null -c bash
+```
+
+## TTY upgrade
+
+```shell
+script /dev/null -c bash
+# Ctrl+Z
+stty raw -echo; fg
+reset xterm
+export TERM=xterm
+export SHELL=bash
+stty rows 27 cols 164
 ```

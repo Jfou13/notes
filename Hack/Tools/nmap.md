@@ -1,5 +1,19 @@
 # NMAP
 
+## classique
+
+```shell
+nmap -sC -sV -T4 -p- {target_IP}
+nmap -sVC -T4 -p- {target_IP}
+```
+
+## other tcp scan
+
+```shell
+sudo nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn {target_IP}
+```
+
+
 ## bypassing firewall restrictions for service scanning and host discovery
 
 ```bash
