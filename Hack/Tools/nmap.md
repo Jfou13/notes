@@ -5,6 +5,7 @@
 ```shell
 nmap -sC -sV -T4 -p- {target_IP}
 nmap -sVC -T4 -p- {target_IP}
+nmap -sVC -T4 -A -Pn {target_IP}
 ```
 
 ## other tcp scan
