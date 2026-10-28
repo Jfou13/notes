@@ -17,19 +17,22 @@ Notes d’administration système et réseau.
 [![Linux](assets/banners/linux.svg)](Admin/Linux/)
 
 - **Linux/**
-  - [apt.md](Admin/Linux/apt.md)
   - [AS.md](Admin/Linux/AS.md)
-  - [awk.md](Admin/Linux/awk.md)
-  - [dpkg.md](Admin/Linux/dpkg.md)
-  - [find.md](Admin/Linux/find.md)
-  - [grep.md](Admin/Linux/grep.md)
-  - [journalctl.md](Admin/Linux/journalctl.md)
+  - **Commands/**
+    - [apt.md](Admin/Linux/Commands/apt.md)
+    - [awk.md](Admin/Linux/Commands/awk.md)
+    - [dpkg.md](Admin/Linux/Commands/dpkg.md)
+    - [find.md](Admin/Linux/Commands/find.md)
+    - [grep.md](Admin/Linux/Commands/grep.md)
+    - [journalctl.md](Admin/Linux/Commands/journalctl.md)
+    - [ps.md](Admin/Linux/Commands/ps.md)
+    - [rsync.md](Admin/Linux/Commands/rsync.md)
+    - [systemctl.md](Admin/Linux/Commands/systemctl.md)
   - **Kubernetes/**
     - [Kubernetes_commandes_de_bases.md](Admin/Linux/Kubernetes/Kubernetes_commandes_de_bases.md)
   - [mail.md](Admin/Linux/mail.md)
-  - [ps.md](Admin/Linux/ps.md)
-  - [rsync.md](Admin/Linux/rsync.md)
-  - [systemctl.md](Admin/Linux/systemctl.md)
+  - **Tools/**
+    - [tealdeer.md](Admin/Linux/Tools/tealdeer.md)
   - [upgrade_echec.md](Admin/Linux/upgrade_echec.md)
 
 [![Réseaux](assets/banners/networks.svg)](Admin/Reseaux/)
@@ -96,6 +99,7 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
 [![Fiches pratiques](assets/banners/cheat-sheets.svg)](Hack/cheat_sheets_global/)
 
 - **cheat_sheets_global/**
+  - [bash.md](Hack/cheat_sheets_global/bash.md)
   - [ftp.md](Hack/cheat_sheets_global/ftp.md)
 
 [![Commandes](assets/banners/commands.svg)](Hack/Commands/)
@@ -154,17 +158,19 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
   - [hydra.md](Hack/Tools/hydra.md)
   - [Metasploit.md](Hack/Tools/Metasploit.md)
   - [nmap.md](Hack/Tools/nmap.md)
+  - [rustscan.md](Hack/Tools/rustscan.md)
   - [searchsploit.md](Hack/Tools/searchsploit.md)
   - [smbclient.md](Hack/Tools/smbclient.md)
   - [subfinder.md](Hack/Tools/subfinder.md)
+  - [whatweb.md](Hack/Tools/whatweb.md)
   - [Wpscan.md](Hack/Tools/Wpscan.md)
 
-[![Webshells](assets/banners/webshell.svg)](Hack/Webshell/)
+[![Webshells](assets/banners/webshell.svg)](Hack/Shell/)
 
-- **Webshell/**
-  - [Reverse_shell.md](Hack/Webshell/Reverse_shell.md)
-  - [upgrade_shell.md](Hack/Webshell/upgrade_shell.md)
-  - [webshell_location.md](Hack/Webshell/webshell_location.md)
+- **Shell/**
+  - [Reverse_shell.md](Hack/Shell/Reverse_shell.md)
+  - [upgrade_shell.md](Hack/Shell/upgrade_shell.md)
+  - [webshell_location.md](Hack/Shell/webshell_location.md)
 
 [![Sécurité Windows](assets/banners/windows.svg)](Hack/Windows/)
 
@@ -220,6 +226,9 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
 Write-ups des machines résolues.
 
 [![Machines](assets/banners/machines.svg)](Machines/)
+
+- **archetype/**
+  - [archetype.md](Machines/archetype/achetype.md)
 
 - **Metatwo/**
   - [Writeup_Metatwo.md](Machines/Metatwo/Writeup_Metatwo.md)
