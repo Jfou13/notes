@@ -1,26 +1,26 @@
 # PHP
 
-#### Chemin des sessions php (non fpm) en cli
+## Chemin des sessions php (non fpm) en cli
 
 ``` bash
 php -r 'echo session_save_path() . "\n";'
 /var/lib/php/sessions
 ```
 
-#### Chemin des sessions php fpm en cli
+## Chemin des sessions php fpm en cli
 
 ``` bash
 php5-fpm -i | grep save_path
 session.save_path => tcp://<ip>:<port>?
 ```
 
-#### créer une page php qui va générer une erreur
+## créer une page php qui va générer une erreur
 
 ``` php
 <?php jfou(); ?>
 ```
 
-#### créer une page info.php
+## créer une page info.php
 
 ```bash
 echo "<?php phpinfo(); ?>" > test.php
@@ -30,7 +30,7 @@ echo "<?php phpinfo(); ?>" > test.php
 <?php phpinfo(); ?>
 ```
 
-#### changer de version par défaut php-cli
+## changer de version par défaut php-cli
 
 Manuel :
 
@@ -42,4 +42,12 @@ Interactif :
 
 ``` bash
 update-alternatives --config php
+```
+
+## tester une connexion mysql via php
+
+```bash
+ntu@971cef32e309:/app$ php8.4 -r '$servername = "10.1.2.3"; $username = "toto"; $password = "toto_pass"; $dbname = "information_schema"; $conn = mysqli_connect($servername, $username, $
+$password, $dbname); if (!$conn) { die("Échec de la connexion : " . mysqli_connect_error() . "\n"); } echo "Connexion réussie !\n"; mysqli_close($conn);'
+Connexion réussie !      
 ```

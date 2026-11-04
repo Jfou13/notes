@@ -1,6 +1,26 @@
 # Varnish
 
-#### vérifier les logs varnishncsa
+## commande utiles
+
+voir les hosts du pool
+
+``` bash
+$ varnishadm backend.list
+```
+
+stopper l'utilisation d'un host du pool
+
+``` bash
+$ varnishadm backend.set_health mon_backend_name sick
+```
+
+rétablir l'utilisation d'un host du pool
+
+``` bash
+$ varnishadm backend.set_health mon_backend_name auto
+```
+
+## vérifier les logs varnishncsa
 
 filtrer via le header "host":
 
