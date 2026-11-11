@@ -39,3 +39,4 @@
 
 
 ![kibana](CS_SOC_SIEM_1.png)
+![kibana2](CS_SOC_SIEM_2.png)
