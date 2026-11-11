@@ -36,3 +36,6 @@
 |`event.code`|Field reference - event code/ID (ECS standardized field)|
 |`winlog.event_id`|Field reference - Windows event ID (Winlogbeat native field)|
 |`winlog.channel.keyword`|Field reference - Windows event log channel (e.g., Security)|
+
+
+![kibana](CS_SOC_SIEM_1.png)
