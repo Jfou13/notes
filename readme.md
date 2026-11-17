@@ -96,11 +96,15 @@ Notes, outils et fiches pratiques autour du hacking et de la sécurité.
 
 [![Hacking et sécurité](assets/banners/hacking.svg)](Hack/)
 
-[![Fiches pratiques](assets/banners/cheat-sheets.svg)](Hack/cheat_sheets_global/)
+[![Fiches pratiques](assets/banners/cheat-sheets.svg)](Hack/Global/)
 
-- **cheat_sheets_global/**
-  - [bash.md](Hack/cheat_sheets_global/bash.md)
-  - [ftp.md](Hack/cheat_sheets_global/ftp.md)
+- **Global/**
+  - [bash.md](Hack/Global/bash.md)
+  - [ftp.md](Hack/Global/ftp.md)
+  - [CSRF_Cross-Site_Request_Forgery.md](Hack/Global/CSRF_Cross-Site_Request_Forgery.md)
+  - [SSRF_Server-Side_Request_Forgery.md](Hack/Global/SSRF_Server-Side_Request_Forgery.md)
+  - [XSS_Cross-Site_Scripting.md](Hack/Global/XSS_Cross-Site_Scripting.md)
+  - [XXE.md](Hack/Global/XXE.md)
 
 [![Commandes](assets/banners/commands.svg)](Hack/Commands/)
 
@@ -228,7 +232,7 @@ Write-ups des machines résolues.
 [![Machines](assets/banners/machines.svg)](Machines/)
 
 - **archetype/**
-  - [archetype.md](Machines/archetype/achetype.md)
+  - [archetype.md](Machines/archetype/archetype.md)
 
 - **Metatwo/**
   - [Writeup_Metatwo.md](Machines/Metatwo/Writeup_Metatwo.md)
